@@ -1,0 +1,43 @@
+body, p, ul, li,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+header a{
+    color: white;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+img {
+    max-width: 100%;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding: 15px;
+    display:block;
+    margin: 10px;
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}

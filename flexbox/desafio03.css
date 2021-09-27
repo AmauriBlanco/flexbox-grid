@@ -1,0 +1,98 @@
+body, p{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+   height: 150px;
+   text-align: center;
+   background-color: rgb(137, 173, 238);
+}
+.main{
+    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    display: flex;
+    height: 80%;
+    text-align: center;
+}
+.artigo01{
+    width: calc(100%/3);
+    background-color: rgb(240, 223, 125);
+    height: 80%;
+    text-align: center;
+}
+.artigo02{
+    width: calc(100%/3);
+    background-color: rgb(195, 161, 212);
+    height: 80%;
+    text-align: center;
+}
+.artigo03{
+    width: calc(100%/3);
+    background-color: rgb(212, 146, 146);
+    height: 80%;
+    text-align: center;
+}
+.artigo04{
+   text-align: center;
+   background-color: rgb(134, 117, 146);
+    height: 20%;
+    width: 100%;
+    
+}
+
+.footer{
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(212, 211, 211);
+}
+@media(max-width:770px){
+    .main{
+        flex-wrap: wrap;
+    
+    }
+    .artigo01{
+        height: 50%;
+        width: 50%;
+    }   
+    .artigo02{
+        height: 50%;
+        width: 50%;
+    } 
+    .artigo03{
+        height: 50%;
+        width: 50%;
+    }   
+    .artigo04{
+        height: 50%;
+        width: 50%; 
+    }
+ 
+}
+@media(max-width:430px){
+    .artigo01{
+        height: 25%;
+        width: 100%;
+    }   
+    .artigo02{
+        height: 25%;
+        width: 100%;
+    } 
+    .artigo03{
+        height: 25%;
+        width: 100%;
+    }   
+    .artigo04{
+        height: 25%;
+        width: 100%; 
+    }
+    .footer{
+        height: 100px;
+        margin: 0 auto;
+    }
+}
