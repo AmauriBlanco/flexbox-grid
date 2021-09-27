@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+header{
+    border: solid 5px rgb(0, 0, 0);
+    margin: 10px;
+    grid-column: 1/3;
+}
+section{
+    border: solid 5px brown;
+    margin: 10px;
+    height: 600px;
+}
+aside{
+    border: solid 5px rgb(228, 216, 55);
+    margin: 10px;
+}
+footer{
+    display: flex;
+
+}
+.footer1{
+    border: solid 5px rgb(65, 42, 165);
+    margin: 10px;
+    width: 25%;
+}
+.footer2{
+    border: solid 5px rgb(119, 109, 165);
+    margin: 10px;
+    width: 50%;
+}
+.footer3{
+    border: solid 5px rgb(65, 42, 165);
+    margin: 10px;
+    width: 25%;
+}
+@media(max-width:770px){
+    section{
+        grid-column: 1/3;
+        height: 500px;
+    }
+    aside{
+        grid-column: 1/3;
+        height: 200px;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .footer1{
+        width: 45%;
+        margin: 10px;
+        
+    }
+    .footer2{
+        width: 100%;
+        order: -1;
+        
+        
+    }
+    .footer3{
+       width: 45%;
+       margin: 10px;
+    }
+}
+
+
+@media(max-width:601px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .footer1{
+        width: 100%;
+        margin: 10px;
+        order: -1;
+        
+    }
+    .footer2{
+        width: 100%;
+        
+        
+        
+    }
+    .footer3{
+       width: 100%;
+       margin: 10px;
+    }
+}
+
