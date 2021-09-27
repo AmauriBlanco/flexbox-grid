@@ -99,7 +99,7 @@ footer{
         width: 45%;
     }
 }
-@media(max-width:425px){
+@media(max-width:600px){
     footer{
         flex-wrap: wrap;
         margin: 0;
