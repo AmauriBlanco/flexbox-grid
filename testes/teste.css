@@ -1,0 +1,80 @@
+body, p{
+    padding: 0;
+    margin: 0;
+}
+
+.principal {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas: "header header" "section aside" "footer footer" ;
+   
+}
+header{
+   grid-area: header   ;
+   background-color: blueviolet;
+}
+section{
+    
+    grid-area: section  ;
+    background-color: rgb(75, 223, 141);
+ }
+ aside{
+    grid-area: aside   ;
+    background-color: rgb(75, 189, 223);
+ }
+ footer{
+    grid-area: footer   ;
+    background-color: rgb(223, 75, 149);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+ .parte1{
+    width: 25%;
+ }
+ .parte2{
+     
+     width: 50%;
+     
+ }
+ .parte3{
+    width: 25%;
+ }
+ @media(max-width:770px){
+    .principal {
+                
+        grid-template-columns: 100%;
+        grid-template-areas: "header" "section" "aside" "footer";
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+       text-align: center;
+    }
+    .parte1{
+        width: 45%;
+    }
+    .parte2{
+        width: 100%;
+        order: -1;
+    }
+    .parte3{
+        width: 45%;
+    }
+ }
+ @media(max-width:426px){
+    .parte1{
+        width: 100%;
+    }
+    .parte2{
+        width: 100%;  
+        order: 0; 
+    }
+    .parte3{
+        width: 100%;
+    }
+
+ }
