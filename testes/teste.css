@@ -1,6 +1,11 @@
-body, p{
+body, 
+p   {
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(80, 78, 78);
+    text-align: center;
 }
 
 .principal {
@@ -10,71 +15,93 @@ body, p{
     grid-template-columns: 75% 25%;
     grid-template-rows: 100px 450px 150px;
     grid-template-areas: "header header" "section aside" "footer footer" ;
-   
+    border-collapse: collapse;
 }
-header{
-   grid-area: header   ;
-   background-color: blueviolet;
+
+header {
+   grid-area: header;
+   background-color: #48CFE0; 
 }
-section{
-    
-    grid-area: section  ;
-    background-color: rgb(75, 223, 141);
+
+section {
+    grid-area: section;
+    background-color: #E05DA1; 
  }
- aside{
-    grid-area: aside   ;
-    background-color: rgb(75, 189, 223);
+
+ aside {
+    grid-area: aside;
+    background-color: #E0D475;  
  }
- footer{
-    grid-area: footer   ;
-    background-color: rgb(223, 75, 149);
+
+ footer {
+    grid-area: footer;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
  }
- .parte1{
+
+ .parte1 {
     width: 25%;
+    background-color: #378994;  
  }
- .parte2{
-     
-     width: 50%;
-     
+
+ .parte2 {
+    width: 50%;
+    background-color: #378994;
+    margin: 0 2px;
+    
  }
- .parte3{
+
+ .parte3 {
     width: 25%;
+    background-color: #378994;
+    margin: 0;
+   
  }
- @media(max-width:770px){
-    .principal {
-                
+
+ @media(max-width: 992px) {
+    .principal {        
         grid-template-columns: 100%;
         grid-template-areas: "header" "section" "aside" "footer";
     }
-    footer{
+
+    footer {
         display: flex;
         flex-wrap: wrap;
-       text-align: center;
+        text-align: center;
+        justify-content: space-between;
     }
-    .parte1{
-        width: 45%;
+
+    .parte1 {
+        width: 49%;
+        margin: 0;
+        border: solid 1px #fff;
     }
-    .parte2{
+
+    .parte2 {
         width: 100%;
         order: -1;
+        margin: 0;
+        border: solid 1px #fff;
     }
-    .parte3{
-        width: 45%;
+
+    .parte3 {
+        width: 49%;
+        margin: 0;
+        border: solid 1px #fff;
     }
  }
- @media(max-width:426px){
-    .parte1{
-        width: 100%;
-    }
-    .parte2{
-        width: 100%;  
-        order: 0; 
-    }
-    .parte3{
+
+ @media(max-width: 768px) {
+    .parte1 {
         width: 100%;
     }
 
+    .parte2 {
+        width: 100%;  
+        order: 0; 
+    }
+
+    .parte3 {
+        width: 100%;
+    }
  }
