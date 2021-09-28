@@ -92,6 +92,12 @@ section {
  }
 
  @media(max-width: 768px) {
+    body {
+        margin: 0 15px;
+    }
+    .principal {
+        width: 100%;        
+    }
     .parte1 {
         width: 100%;
     }
